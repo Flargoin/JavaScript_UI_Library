@@ -8,6 +8,7 @@ $.prototype.show = function() {
         this[i].style.display = '';
     }
 
+    /* Чейнинг */
     return this;
 }
 
@@ -19,6 +20,7 @@ $.prototype.hide = function() {
         this[i].style.display = 'none';
     }
 
+    /* Чейнинг */
     return this;
 }
 
@@ -36,5 +38,6 @@ $.prototype.toggle = function() {
         
     }
 
+    /* Чейнинг */
     return this;
 }
