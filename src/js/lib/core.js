@@ -52,7 +52,9 @@ $.prototype.init = function(selector) {
     3) Изменения внутри элементов
     4) и т.д и т.п
 */
+
 $.prototype.init.prototype = $.prototype;
+
 
 /* 
     Передали функцию в глобальный объект window
