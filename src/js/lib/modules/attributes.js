@@ -13,7 +13,7 @@ $.prototype.addAttr = function(attrName, value) {
 
 $.prototype.removeAttr = function(attrName) {
     for(let i = 0; i < this.length; i++) {
-        if(!this[i].setAttribute) {
+        if(!this[i].removeAttribute) {
             continue;
         }
         this[i].removeAttribute(attrName);
@@ -24,10 +24,10 @@ $.prototype.removeAttr = function(attrName) {
 
 $.prototype.getAttr = function(attrName) {
     for(let i = 0; i < this.length; i++) {
-        if(!this[i].setAttribute) {
+        if(!this[i].getAttribute) {
             continue;
         }
-        console.log(this[i].getAttribute(attrName));
+        return this[i].getAttribute(attrName);
     }
 
     return this;
@@ -35,7 +35,7 @@ $.prototype.getAttr = function(attrName) {
 
 $.prototype.hasAttr = function(attrName) {
     for(let i = 0; i < this.length; i++) {
-        if(!this[i].setAttribute) {
+        if(!this[i].hasAttribute) {
             continue;
         }
         console.log(this[i].hasAttribute(attrName));

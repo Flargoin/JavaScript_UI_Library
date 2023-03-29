@@ -2,6 +2,7 @@ import './lib/lib';
 
 $('#first').click(function() {
     $('div').eq(1).fadeToggle(800);
+    $('div').addClass('ads');
 });
 
 $('[data-count="second"]').click(function() {
